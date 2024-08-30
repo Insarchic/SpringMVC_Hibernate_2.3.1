@@ -30,8 +30,8 @@ public class UsersController {
         return "all-users";
     }
 
-    @GetMapping("/addUser")
-    public String addUser(Model model) {
+    @GetMapping("/addNewUser")
+    public String addNewUser(Model model) {
         User user = new User();
         model.addAttribute("user", user);
         return "user-info";

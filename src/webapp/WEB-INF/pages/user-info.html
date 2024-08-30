@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<html lang="ru" xmlns:th="http://www.thymeleaf.org"
 <head>
     <meta charset="UTF-8">
     <title>Регистрация</title>
@@ -10,7 +10,6 @@
 
 <form th:action="@{/saveUser}" th:object="${user}" method="post">
 
-    <input type="hidden" th:field="*{id}"/>
 
     Name: <input th:field="*{name}" type="text"/>
     <br><br>
@@ -19,6 +18,8 @@
     Year: <input th:field="*{yearOfBirth}" type="text"/>
     <br><br>
     <input type="submit" value="OK">
+
+    <input type="hidden" th:field="*{id}"/>
 
 </form>
 </body>

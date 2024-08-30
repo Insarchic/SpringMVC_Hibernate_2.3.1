@@ -26,8 +26,7 @@
             <td>
                 <button type="button"
                         th:onclick="'window.location.href=\'' + @{/updateUser(userId=${user.id})} + '\''">Update</button>
-            </td>
-            <td>
+
                 <button type="button"
                         th:onclick="'window.location.href=\'' + @{/deleteUser(userId=${user.id})} + '\''">Delete</button>
             </td>
@@ -38,7 +37,7 @@
 <br>
 
 <input th:type="button" th:value="Add"
-onclick="window.location.href = 'createUser' "/>
+onclick="window.location.href = 'addNewUser' "/>
 
 
 </body>
